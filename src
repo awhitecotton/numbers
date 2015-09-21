@@ -1,0 +1,33 @@
+from random import randint
+
+def main():
+    
+    print("I'm thinking of a number between 1 and 100")
+    print("     ")
+    lastguess=0
+    guesses=0
+    secret=randint(1,100)
+    gameover=False
+
+    while(gameover==False):
+        guesses+=1
+        lastguess=raw_input("Guess a number! ")
+        
+        lastguess=int(lastguess)
+        print("          ")
+        
+
+        if(lastguess<secret):
+                print(str(lastguess)+" is too low!")
+                print("   ")
+        elif(lastguess>secret):
+                print(str(lastguess)+" is too high")
+                print("    ")
+        elif(secret==lastguess):
+                gameover=not False
+
+
+    print("You got the right number in "+str(guesses)+" guesses!") 
+
+
+main()   
