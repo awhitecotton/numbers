@@ -1,1 +1,3 @@
-# numbers
+This program is a number guessing game. The object of the game is for the user to guess the secret number in as few of attempts as possible. I use the built-in function randint to choose a random number between 1 and 100. Once the random number has been generated, the program prompts the user to type in a number. The program will tell the user whether that number is too low or too high. 
+
+  The main logic of this program takes place within the while-loop. As long as the variable called gameover is equal to false, the program will continue to run. Once the user's number is equal to the randomly generated number, the gameover variable will flip over to true, and the game will end. There will then be a message printed to the screen that tells the user how many guesses it took them to guess the number correctly. 
